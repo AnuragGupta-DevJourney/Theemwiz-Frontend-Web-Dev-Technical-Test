@@ -65,7 +65,7 @@
 }
 
 .gallery-container .first-row .left-content {
-    background-image: url("assets/images/portfolio-work/PorfolioWorkOne.png");
+    background-image: url("../assets/images/portfolio-work/PorfolioWorkOne.png");
     /* background-position: center center; */
     background-size: cover;
     flex-basis: 400px;
@@ -80,7 +80,7 @@
 }
 
 .gallery-container .first-row .right-content {
-    background-image: url("assets/images/portfolio-work/PorfolioWorkTwo.png");
+    background-image: url("../assets/images/portfolio-work/PorfolioWorkTwo.png");
     background-repeat: no-repeat;
     /* background-position: center center; */
     background-size: cover;
@@ -96,7 +96,7 @@
 }
 
 .gallery-container .second-row .left-content {
-    background-image: url("assets/images/portfolio-work/PorfolioWorkFour.png");
+    background-image: url("../assets/images/portfolio-work/PorfolioWorkFour.png");
     /* background-position: center center; */
     background-size: cover;
 
@@ -113,7 +113,7 @@
 }
 
 .gallery-container .second-row .right-content {
-    background-image: url("assets/images/portfolio-work/PorfolioWorkThree.png");
+    background-image: url("../assets/images/portfolio-work/PorfolioWorkThree.png");
     background-repeat: no-repeat;
     /* background-position: center center; */
     background-size: cover;
