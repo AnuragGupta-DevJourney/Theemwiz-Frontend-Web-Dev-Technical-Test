@@ -1,0 +1,155 @@
+.carousel-wrapper {
+    /* max-width: 1000px; */
+    margin: 0px auto;
+    padding: 1rem 20px 3.5rem 20px;
+    background-color: var(--primary-bg-color);
+}
+
+.carousel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 5.5rem;
+}
+
+.carousel-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.carousel-title p {
+    text-transform: uppercase;
+    color: var(--btn-primary-color);
+    letter-spacing: 3px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.carousel-header h3 {
+    font-size: 3.5rem;
+    color: var(--text-primary-color);
+    margin-top: 1.5rem;
+}
+
+.carousel-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-nav button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border: 1px solid var(--text-primary-color);
+    border-radius: 50%;
+    transition: color 0.2s;
+    padding: 0.7rem;
+    margin-inline: 0.3rem;
+}
+
+.carousel-nav button i {
+    color: var(--text-primary-color);
+}
+
+.carousel-nav button:hover {
+    color: #0e8ce4;
+}
+
+.team-member {
+    width: 280;
+    margin-inline: 1rem;
+    /* height: 400px; */
+}
+
+.team-member img {
+    width: 16.25rem;
+    height: 14.5rem;
+    object-fit: contain;
+    aspect-ratio: 1;
+    /* height: 260; */
+    border-radius: 10px;
+    display: block;
+    border: 1px solid #3A3C56;
+    padding-top: 1.5rem;
+}
+
+.team-member h4 {
+    font-size: 1.5rem;
+    color: var(--text-primary-color);
+    margin-top: 1.5rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #FFFFFFA3;
+    margin-top: 0.5rem;
+}
+
+
+.owl-dots {
+    text-align: center;
+    margin-top: 15px;
+    /* display: none; */
+}
+
+.owl-dot span {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+/* element.style {} */
+
+.owl-dot.active span {
+    background: #0e8ce4;
+}
+
+/* changes in their built in classs */
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background-color: transparent !important;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+    border: 1px solid gray;
+}
+
+.owl-theme .owl-dots .owl-dot span:hover,
+.owl-theme .owl-dots .owl-dot span:active {
+    background: var(--btn-primary-color) !important;
+}
+
+
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 1.5rem !important;
+}
+
+@media (max-width:768px) {
+    .carousel-wrapper {
+        padding: 1rem 20px 2rem 20px;
+    }
+
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 2.5rem !important;
+    }
+}
+
+@media (max-width:576px) {
+    .carousel-nav {
+        display: none;
+    }
+
+    .owl-carousel .owl-item img {
+        width: 250px;
+        height: 200px;
+    }
+}

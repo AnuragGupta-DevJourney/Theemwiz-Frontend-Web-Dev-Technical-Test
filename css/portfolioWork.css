@@ -1,0 +1,231 @@
+.portfolio-card-section {
+    padding: 5rem 0.8rem;
+    background-color: var(--primary-bg-color);
+    text-align: center;
+}
+
+.portfolio-container p {
+    text-transform: uppercase;
+    color: var(--btn-primary-color);
+    letter-spacing: 3px;
+}
+
+.portfolio-container h3 {
+    font-size: 3.7rem;
+    color: var(--text-primary-color);
+    margin-top: 1rem;
+}
+
+.portfolio-container .work-gallery-filter ul {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin: 2rem 0;
+    text-transform: capitalize;
+}
+
+.portfolio-container .work-gallery-filter ul li:first-child a {
+    color: var(--text-primary-color);
+}
+
+.portfolio-container .work-gallery-filter ul li a {
+    color: #FFFFFFA3;
+}
+
+
+/* gallery container style */
+
+.gallery-container {
+    padding: 0 0.5rem;
+    margin: 3rem span;
+}
+
+.gallery-container .first-row,
+.gallery-container .second-row {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.gallery-container .first-row span,
+.gallery-container .second-row span {
+    background-color: var(--text-primary-color);
+    padding: 0.5rem 0.8rem;
+    border: none;
+    border-radius: 15px;
+}
+
+.gallery-container .first-row h3,
+.gallery-container .second-row h3 {
+    font-size: 2.4rem;
+    color: var(--text-primary-color);
+    margin-top: 1rem;
+}
+
+.gallery-container .first-row .left-content {
+    background-image: url("/assets/images/portfolio-work/PorfolioWorkOne.png");
+    /* background-position: center center; */
+    background-size: cover;
+    flex-basis: 400px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 26rem;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3.5rem;
+}
+
+.gallery-container .first-row .right-content {
+    background-image: url("/assets/images/portfolio-work/PorfolioWorkTwo.png");
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: cover;
+    flex-grow: 1;
+    flex-basis: 350px;
+    width: 100%;
+    height: 26rem;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3.5rem;
+}
+
+.gallery-container .second-row .left-content {
+    background-image: url("/assets/images/portfolio-work/PorfolioWorkFour.png");
+    /* background-position: center center; */
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 26rem;
+    flex-grow: 1;
+    flex-basis: 350px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3.5rem;
+}
+
+.gallery-container .second-row .right-content {
+    background-image: url("/assets/images/portfolio-work/PorfolioWorkThree.png");
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 26rem;
+    flex-basis: 400px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 3.5rem;
+}
+
+.gallery-container .explore-more .explore-more-btn {
+    border: none;
+    color: var(--text-primary-color);
+    background-color: var(--primary-bg-color);
+    border: 1px solid rgba(216, 216, 216, 0.696);
+    padding: 0.6rem 0.9rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 4rem;
+}
+
+.gallery-container .explore-more .explore-more-btn a {
+    color: var(--text-primary-color);
+    font-size: 1.2rem;
+}
+
+/* contact card style here */
+
+.contact-card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 1.5rem;
+    align-items: center;
+    height: 21rem;
+    background-color: var(--secondary-bg-color);
+    margin-top: 13rem;
+    border-radius: 6px;
+    /* flex-wrap: wrap; */
+}
+
+.contact-card-container .left-content {
+    text-align: left;
+}
+
+.contact-card-container .left-content p {
+    text-transform: uppercase;
+    color: var(--btn-primary-color);
+    letter-spacing: 3px;
+}
+
+.contact-card-container .left-content h3 {
+    font-size: 1.7rem;
+    color: var(--text-secondary-color);
+    margin-top: 1rem;
+    line-height: 2.2rem;
+}
+
+.contact-card-container .left-content .contact-us-btn {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary-color);
+    padding: 0.6rem 1.8rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    border: none;
+    background-color: var(--btn-primary-color);
+    width: fit-content;
+    margin-top: 1rem;
+}
+
+.contact-card-container .middle-content img{
+    width: 100%;
+}
+
+.contact-card-container .right-content {
+    align-self: flex-end;
+
+}
+
+
+
+/* media query start here  */
+
+@media (max-width:992px) {
+
+    .contact-card-container {
+        padding: 0 1rem;
+        flex-wrap: wrap;
+        height: auto;
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width:768px) {
+
+    .gallery-container .second-row .right-content,
+    .gallery-container .first-row .left-content {
+        flex-grow: 1;
+    }
+        .contact-card-container .left-content{
+            padding-top: 2rem;
+        }
+}
+
+@media (max-width:576px) {
+    .gallery-container .explore-more .explore-more-btn a{
+        padding-top: 0.2rem;
+    }
+
+}

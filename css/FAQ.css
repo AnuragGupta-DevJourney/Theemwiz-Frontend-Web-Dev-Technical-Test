@@ -1,0 +1,147 @@
+.faq-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 4rem;
+    flex: 1;
+    padding: 3rem 0.4rem 1rem 0.4rem;
+    flex-wrap: wrap;
+    justify-items: center;
+    border-bottom: 1px solid #F3D1BF;
+    padding-bottom: 5rem;
+    background-color: var(--secondary-bg-color);
+}
+
+
+
+.faq-container .left-content,
+.faq-container .right-content {
+    flex-basis: 350px;
+    flex-grow: 1;
+}
+
+.faq-container .left-content p {
+    text-transform: uppercase;
+    color: var(--btn-primary-color);
+    letter-spacing: 3px;
+}
+
+.faq-container .left-content h1 {
+    font-size: 2.7rem;
+    color: var(--text-secondary-color);
+    margin-top: 1.5rem;
+}
+
+
+.faq-container .left-content>p:nth-child(3) {
+    color: var(--text-secondary-color);
+    font-weight: 300;
+    margin: 0;
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    text-transform: none;
+    letter-spacing: 0px;
+    line-height: 2rem;
+    /* max-width: 29rem; */
+    padding-right: 5rem;
+}
+
+.faq-container .left-content .contact-us-btn {
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    margin-top: 2rem;
+}
+
+.faq-container .left-content .contact-us-btn a {
+    color: var(--text-secondary-color);
+}
+
+
+.work-container .right-content {
+    flex-basis: 350px;
+    flex-grow: 1;
+}
+
+.work-container .right-content div {
+    display: flex;
+    justify-content: left;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 3.5rem;
+}
+
+.work-container .right-content div span {
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+
+.work-container .right-content div p {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* accordion style here */
+
+.accordion-wrapper {
+    width: 100%;
+    margin: 2rem auto;
+    font-family: sans-serif;
+}
+
+.accordion-item {
+    border: 1px solid #F3D1BF;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background-color: var(--text-primary-color);
+    padding: 2rem 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: background 0.3s;
+}
+
+/* .accordion-header:hover {
+    background: var(--secondary-bg-color);
+} */
+
+.accordion-body {
+    padding: 1rem 1.5rem;
+    display: none;
+    background-color: #fff;
+    color: var(--text-secondary-color);
+    font-weight: 300;
+    margin: 0;
+    font-size: 1rem;
+    text-transform: none;
+    letter-spacing: 0px;
+    line-height: 2rem;
+    /* max-width: 29rem; */
+    padding-right: 5rem;
+}
+
+.accordion-item.active .accordion-body {
+    display: block;
+
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow i {
+    font-size: 0.8rem;
+    background-color: var(--btn-primary-color);
+    color: var(--text-primary-color);
+    padding: 0.4rem;
+    border-radius: 50%;
+}
+
+.accordion-item.active .arrow {
+    transform: rotate(180deg);
+}
