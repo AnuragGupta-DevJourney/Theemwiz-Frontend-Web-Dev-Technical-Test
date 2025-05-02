@@ -157,10 +157,28 @@
     margin-top: 13rem;
     border-radius: 6px;
     /* flex-wrap: wrap; */
+    padding: 0 1rem;
 }
 
 .contact-card-container .left-content {
     text-align: left;
+    position: relative;
+}
+
+/* for gift image on left top content */
+.contact-card-container .left-content::before {
+    content: "";
+    position: absolute;
+    background-image: url(../assets/images/contactCard/gift.png);
+    top: -100%;
+    z-index: 99;
+    left: 10%;
+    background-repeat: no-repeat;
+    width: 7.5rem;
+    height: 7.5rem;
+    object-fit: contain;
+    background-size: contain;
+    /* background-color: green; */
 }
 
 .contact-card-container .left-content p {
@@ -189,15 +207,30 @@
     margin-top: 1rem;
 }
 
-.contact-card-container .middle-content img{
+.contact-card-container .middle-content img {
     width: 100%;
 }
 
 .contact-card-container .right-content {
     align-self: flex-end;
-
+    position: relative;
+    z-index: 99;
 }
 
+.contact-card-container .right-content::after {
+    content: "";
+    position: absolute;
+    background-image: url(../assets/images/contactCard/rainbowRingBg.png);
+    bottom: 5rem;
+    z-index: -2;
+    right: 5%;
+    /* background-color: green; */
+    height: 15rem;
+    width: 18rem;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 
 /* media query start here  */
@@ -210,6 +243,8 @@
         height: auto;
         margin-top: 8rem;
     }
+
+
 }
 
 @media (max-width:768px) {
@@ -218,14 +253,34 @@
     .gallery-container .first-row .left-content {
         flex-grow: 1;
     }
-        .contact-card-container .left-content{
-            padding-top: 2rem;
-        }
+
+    .contact-card-container .left-content {
+        padding-top: 6rem;
+    }
+
+    .contact-card-container .left-content::before {
+        top: -25%;
+    }
+
+    .contact-card-container .right-content::after {
+        width: 25rem;
+        right: 0px;
+
+    }
+
 }
 
 @media (max-width:576px) {
-    .gallery-container .explore-more .explore-more-btn a{
+    .gallery-container .explore-more .explore-more-btn a {
         padding-top: 0.2rem;
+    }
+
+    .contact-card-container .right-content::after {
+        width: 107%;
+        right: 19px;
+        bottom: 7rem;
+        height: 20rem;
+
     }
 
 }

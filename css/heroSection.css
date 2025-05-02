@@ -3,7 +3,7 @@
     justify-content: center;
     gap: 2rem;
     flex: 1;
-    padding: 3rem 0.4rem 1rem 0.4rem;
+    padding: 3rem 1.4rem 1rem 1.4rem;
     flex-wrap: wrap;
     background-color: var(--primary-bg-color);
 }
@@ -97,11 +97,17 @@
     .hero-section {
         flex-direction: column-reverse;
         gap: 9rem;
-        padding: 0 1.3rem;
+        padding: 1.5rem 1.3rem;
     }
 
     .hero-section .left-content .profile-pic-part {
         margin-top: 3.3rem;
         padding-bottom: 1.2rem;
+    }
+}
+
+@media (max-width:576px) {
+    .hero-section {
+        gap: 0rem;
     }
 }
